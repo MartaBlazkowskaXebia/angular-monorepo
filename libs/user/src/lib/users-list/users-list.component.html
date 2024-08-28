@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let user of users" libHighlight="red">
+    {{ user.name }}
+  </li>
+</ul>
+<div>{{ count() }} | {{ doubleCount() }}</div>
+<button (click)="handleChangeCount(1)">+</button>
+<button (click)="handleChangeCount(-1)">-</button>
