@@ -18,6 +18,7 @@
       "@angular-monorepo/data-access": ["libs/data-access/src/index.ts"],
       "@angular-monorepo/directives": ["libs/shared/directives/src/index.ts"],
       "@angular-monorepo/models": ["libs/models/src/index.ts"],
+      "@angular-monorepo/store": ["libs/store/src/index.ts"],
       "@angular-monorepo/todo": ["libs/todo/src/index.ts"],
       "@angular-monorepo/user": ["libs/user/src/index.ts"]
     }

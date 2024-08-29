@@ -1,8 +1,14 @@
 <ul>
-  <li *ngFor="let user of users" libHighlight="red">
+  <li *ngFor="let user of users$ | async" libHighlight="red">
     {{ user.name }}
   </li>
 </ul>
 <div>{{ count() }} | {{ doubleCount() }}</div>
 <button (click)="handleChangeCount(1)">+</button>
 <button (click)="handleChangeCount(-1)">-</button>
+<br />
+<br />
+<p>{{ stateCount$ | async }}</p>
+<button (click)="increament()">+</button>
+<button (click)="decreament()">-</button>
+<button (click)="reset()">reset</button>
