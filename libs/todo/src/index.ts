@@ -1,1 +1,2 @@
-export * from './lib/todo/todo.component';
+export * from './lib/add-todo/add-todo.component';
+export * from './lib/todo-list/todo-list.component';

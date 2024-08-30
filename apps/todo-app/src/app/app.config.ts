@@ -6,6 +6,7 @@ import { provideStore } from '@ngrx/store';
 import { apiInterceptor } from '@angular-monorepo/data-access';
 import {
   counterReducer,
+  todosReducer,
   UsersEffects,
   usersReducer,
 } from '@angular-monorepo/store';
@@ -20,6 +21,7 @@ export const appConfig: ApplicationConfig = {
     provideStore({
       counter: counterReducer,
       users: usersReducer,
+      todos: todosReducer,
     }),
     provideEffects(UsersEffects),
     provideStoreDevtools({

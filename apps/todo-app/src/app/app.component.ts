@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { UsersListComponent } from '@angular-monorepo/user';
+import { LayoutComponent } from '@angular-monorepo/layout';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, UsersListComponent],
+  imports: [RouterModule, LayoutComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -1,0 +1,8 @@
+<lib-add-todo />
+
+<br /><br />
+<ul>
+  <li *ngFor="let todo of todos$ | async">
+    {{ todo.title }} <button (click)="handleRemoveTodo(todo.id)">x</button>
+  </li>
+</ul>

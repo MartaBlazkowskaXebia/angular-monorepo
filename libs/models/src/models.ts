@@ -4,3 +4,10 @@ export interface IUser {
   username: string;
   email: string;
 }
+
+export interface ITodo {
+  userId: number;
+  id: string;
+  title: string;
+  completed: boolean;
+}
